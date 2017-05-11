@@ -1,14 +1,26 @@
 <resources>
-    <string name="app_name">dafla</string>
+    <string name="app_name">Testing</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_main_menu">MainMenuActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <!--Main Activity View -->
+    <string name="mav_emailText">Enter your email</string>
+    <string name="mav_passText">Enter your password</string>
+    <string name="mav_forgotPassText">Forgot Password?</string>
+    <string name="mav_loginText">Log In</string>
+    <string name="mav_orText">OR</string>
+    <string name="mav_signupText">Don\'t have an account? Sign Up</string>
 
-    <string name="title_activity_camera">CameraActivity</string>
+    <!--Facebook sdk -->
+    <string name="facebook_app_id">433571743659238</string>
 
-    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id">AIzaSyBzsfqjDvTD0AefFCtA4vwo0D8-SWunpFw</string>
+    <string name="loading">Loading…</string>
+    
+    <string name="dummy_content">ggg</string>
+    <string name="dummy_button">ggg</string>
+
 </resources>
