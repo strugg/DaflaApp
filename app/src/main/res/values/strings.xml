@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Testing</string>
+    <string name="app_name">Dafla</string>
     <string name="err_msg_name">Enter your full name</string>
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the password</string>
@@ -19,8 +19,18 @@
          from https://console.developers.google.com/ -->
     <string name="server_client_id">AIzaSyBzsfqjDvTD0AefFCtA4vwo0D8-SWunpFw</string>
     <string name="loading">Loading…</string>
-    
+
     <string name="dummy_content">ggg</string>
     <string name="dummy_button">ggg</string>
+
+    <string name="title_home">asdasd</string>
+    <string name="title_dashboard">Dashasdas2</string>
+    <string name="title_notifications">Alerasd3ts</string>
+
+    <string name="title_activity_main_menu">Menu</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>
