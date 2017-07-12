@@ -4,33 +4,54 @@
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the password</string>
 
-    <!--Main Activity View -->
-    <string name="mav_emailText">Enter your email</string>
-    <string name="mav_passText">Enter your password</string>
+    <!--Log In Activity View -->
+    <string name="mav_emailText">Email</string>
+    <string name="mav_passText">Password</string>
     <string name="mav_forgotPassText">Forgot Password?</string>
     <string name="mav_loginText">Log In</string>
     <string name="mav_orText">OR</string>
     <string name="mav_signupText">Don\'t have an account? Sign Up</string>
 
+    <!--Sign Up Activity View -->
+    <string name="mav_name">Name</string>
+    <string name="mav_username">Username</string>
+    <string name="mav_birth">Birthday</string>
+    <string name="mav_birth_button">Select</string>
+    <string name="mav_phone">Phone Number</string>
+    <string name="mav_join">Join</string>
+    <string name="mav_cancel">Already have an account?</string>
+    <string name="mav_cancel_login">Login</string>
+    <string name="des_name">Name</string>
+    <string name="des_username">Username</string>
+    <string name="des_birth">Birthday</string>
+    <string name="des_phone">Phone Number</string>
+    <string name="des_email">Email</string>
+    <string name="des_passText">Password</string>
+
     <!--Facebook sdk -->
-    <string name="facebook_app_id">433571743659238</string>
+    <string name="facebook_app_id">404704499920621</string>
 
     <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
          from https://console.developers.google.com/ -->
-    <string name="server_client_id">AIzaSyBzsfqjDvTD0AefFCtA4vwo0D8-SWunpFw</string>
+    <string name="server_client_id">TODO</string>
     <string name="loading">Loading…</string>
 
     <string name="dummy_content">ggg</string>
     <string name="dummy_button">ggg</string>
 
-    <string name="title_home">Feed</string>
-    <string name="title_dashboard">Home</string>
-    <string name="title_notifications">Camera</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_map">Dafla</string>
+    <string name="title_camera">Camera</string>
 
     <string name="title_activity_main_menu">Menu</string>
     <string name="title_activity_camera">Camera</string>
     <string name="title_activity_settings">Settings</string>
-
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="title_activity_forgot">Reset Password</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

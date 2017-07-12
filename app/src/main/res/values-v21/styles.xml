@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryDark">@color/whiteV2</item>
         <item name="colorAccent">@color/greyV1</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/whiteV1</item>
     </style>
-
 
     <style name="FullscreenTheme" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimaryInverse">@color/greyV1</item>
     </style>
+
 </resources>

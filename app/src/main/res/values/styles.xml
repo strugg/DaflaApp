@@ -2,11 +2,12 @@
 
     <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryDark">@color/whiteV2</item>
         <item name="colorAccent">@color/greyV1</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColorPrimaryInverse">@color/greyV1</item>
     </style>
 
     <style name="labelWhite" parent="TextAppearance.AppCompat">
@@ -15,6 +16,14 @@
         <item name="colorAccent">@color/whiteV1</item>
         <item name="colorControlNormal">@color/whiteV1</item>
         <item name="colorControlActivated">@color/whiteV1</item>
+    </style>
+
+    <style name="labelDark" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/greyV1</item>
+        <item name="android:textColorHint">@color/greyV1</item>
+        <item name="colorAccent">@color/greyV1</item>
+        <item name="colorControlNormal">@color/greyV1</item>
+        <item name="colorControlActivated">@color/greyV1</item>
     </style>
 
     <style name="labelError" parent="TextAppearance.AppCompat.Small">

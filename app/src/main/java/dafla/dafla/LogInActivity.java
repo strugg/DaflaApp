@@ -15,13 +15,15 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//Facebook SDK import
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+//Google SDK import
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
@@ -29,10 +31,6 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-
-import java.util.Arrays;
-
-import static dafla.dafla.R.layout.activity_log_in;
 
 public class LogInActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -56,9 +54,12 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setStatusBarColor(getResources().getColor(android.R.color.transparent));
-
         super.onCreate(savedInstanceState);
-        setContentView(activity_log_in);
+
+        FacebookSdk.setApplicationId(String.valueOf(R.string.facebook_app_id));
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
+        setContentView(R.layout.activity_log_in);
 
         //Var Init
         log_in_activity = (RelativeLayout) findViewById(R.id.log_in_activity);
@@ -77,10 +78,13 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         btnForgotPassword.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
 
+        btnFacebook = (LoginButton) findViewById(R.id.login_button);
+
         //Google signin
-        /*findViewById(R.id.sign_in_button).setOnClickListener(this);
+        findViewById(R.id.sign_in_button).setOnClickListener(this);
         signInButton = (SignInButton) findViewById(R.id.sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);*/
+        signInButton.setSize(SignInButton.SIZE_STANDARD);
+        /*
         // Configure Google Sign In
         /*GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -146,6 +150,11 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.sign_in_button:
+                //signIn();
+                startActivity(new Intent(LogInActivity.this, MainMenuActivity.class));
+                finish();
+                break;
+            case R.id.login_button:
                 //signIn();
                 startActivity(new Intent(LogInActivity.this, MainMenuActivity.class));
                 finish();

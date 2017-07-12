@@ -6,17 +6,27 @@
     <!--Blue -->
     <color name="blue">#4178BE</color>
     <!--Red -->
-    <color name="red">#E71D32</color>
+    <color name="red">#e71d32</color>
+    <!--Red dark -->
+    <color name="red_dark">#ac000c</color>
     <!--Grey v1 -->
     <color name="greyV1">#4A4A4A</color>
     <!--Grey v2 -->
     <color name="greyV2">#9B9B9B</color>
+    <!--White -->
+    <color name="white">#ffffff</color>
     <!--White v1 -->
     <color name="whiteV1">#fdfdfd</color>
     <!--White v2 -->
     <color name="whiteV2">#fefefe</color>
     <!--Yellow -->
     <color name="yellow">#FFCE00</color>
+    <!--Aqua -->
+    <color name="aqua">#00b4a0</color>
+    <!--Aqua V1 -->
+    <color name="aquaV1">#008372</color>
+    <!--Aqua V2 -->
+    <color name="aquaV2">#5ae7d1</color>
     <!--Green v1 -->
     <color name="greenV1">#00B4A0</color>
     <!--Green v2 -->
@@ -25,6 +35,8 @@
     <color name="orange">#FF7832</color>
     <!--Blue grey 500 -->
     <color name="blue_grey_500">#607D8B</color>
+    <!--Black -->
+    <color name="black">#000000</color>
     <!--Black overlay -->
     <color name="black_overlay">#66000000</color>
 </resources>
