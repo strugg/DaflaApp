@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_camera"
         android:icon="@drawable/cam"
-        android:title="@string/title_camera" />
+        android:title="@string/title_camera"
+        app:showAsAction="never|withText"/>
 
     <item
         android:id="@+id/navigation_map"
         android:icon="@drawable/home"
-        android:title="@string/title_map" />
+        android:title="@string/title_map"
+        app:showAsAction="never|withText"/>
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/profile"
-        android:title="@string/title_profile" />
+        android:title="@string/title_profile"
+        app:showAsAction="never|withText"/>
 
 
 

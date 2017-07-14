@@ -16,7 +16,7 @@
         android:src="@drawable/ic_capture"
         android:tint="@color/whiteV1"
         android:background="@android:color/transparent"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="570dp"
         android:layout_gravity="center_horizontal"/>
 
     <ImageButton
@@ -25,6 +25,7 @@
         android:background="@android:color/transparent"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:tint="@color/whiteV1"
         android:rotation="180"
         android:layout_gravity="end"
         android:layout_margin="@dimen/activity_horizontal_margin"/>

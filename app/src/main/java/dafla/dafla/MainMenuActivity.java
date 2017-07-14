@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import static android.R.attr.id;
 
@@ -32,14 +33,21 @@ public class MainMenuActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         }
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationViewEx navigation = (BottomNavigationViewEx) findViewById(R.id.navigation);
+        navigation.setTextVisibility(false);
+        navigation.setIconSize(32,32);
+        navigation.setIconSizeAt(1,100,40);
+        navigation.setIconMarginTop(0,15);
+        navigation.setIconMarginTop(1,7);
+        navigation.setIconMarginTop(2,15);
         Menu menu = navigation.getMenu();
         MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
 
-        navigation .setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.content);
                 switch (item.getItemId()) {
                     case R.id.navigation_camera:
                         Intent intent0 = new Intent(MainMenuActivity.this, CameraActivity.class);
@@ -48,22 +56,32 @@ public class MainMenuActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_map:
                         activity_map_navi map = new activity_map_navi();
-                        FragmentManager manager = getSupportFragmentManager();
-                        manager.beginTransaction().replace(R.id.content,
-                                map,
-                                map.getTag())
-                                .addToBackStack(null)
-                                .commit();
-                        return true;
+                        if(!currentFragment.getClass().getName().equalsIgnoreCase(map.getClass().getName())) {
+                            FragmentManager manager = getSupportFragmentManager();
+                            manager.beginTransaction().replace(R.id.content,
+                                    map,
+                                    map.getTag())
+                                    .addToBackStack(null)
+                                    .commit();
+                            return true;
+                            } else {
+                                //currentFragment es igual a newFragment
+                            return true;
+                            }
                     case R.id.navigation_profile:
                         activity_profile_navi profile = new activity_profile_navi();
-                        FragmentManager manager1 = getSupportFragmentManager();
-                        manager1.beginTransaction().replace(R.id.content,
-                                profile,
-                                profile.getTag())
-                                .addToBackStack(null)
-                                .commit();
-                        return true;
+                        if(!currentFragment.getClass().getName().equalsIgnoreCase(profile.getClass().getName())) {
+                            FragmentManager manager1 = getSupportFragmentManager();
+                            manager1.beginTransaction().replace(R.id.content,
+                                    profile,
+                                    profile.getTag())
+                                    .addToBackStack(null)
+                                    .commit();
+                            return true;
+                        } else{
+                                //currentFragment es igual a newFragment
+                            return true;
+                        }
                 }
                 return true;
             }
